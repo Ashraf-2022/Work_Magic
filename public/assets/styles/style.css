@@ -1,0 +1,194 @@
+/* General Body Styling */
+body {
+    background: #e0e0e0;
+    /* Slightly darker gray for better contrast */
+    font-family: 'Roboto', sans-serif;
+    /* Improved font for readability */
+    color: #333;
+    /* Darker text color for better contrast */
+    margin: 0;
+    padding: 0;
+}
+
+/* Wrapper */
+#wrapper {
+    padding: 70px 25px;
+    /* Adjusted padding for better spacing */
+}
+
+/* Navbar */
+.navbar-expand-lg .navbar-nav.side-nav {
+    flex-direction: column;
+    background: #2c3e50;
+    /* Darker background for contrast */
+    box-shadow: 2px 1px 5px rgba(0, 0, 0, .2);
+    /* Enhanced shadow */
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 240px;
+    /* Increased width for better spacing */
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-top: 15px;
+    /* Added top padding */
+    padding-bottom: 40px;
+}
+
+ul.navbar-nav.side-nav {
+    margin-top: -24px;
+    border-radius: 4px;
+}
+
+.navbar-brand {
+    color: #000;
+}
+
+.nav-link {
+    padding-right: 0;
+    padding-left: 0;
+    color: #000;
+}
+
+/* Navbar Links */
+.navbar-nav.side-nav a {
+    color: #ffffff;
+    /* Light text color for contrast */
+    padding: 12px 20px;
+    /* Added padding for better spacing */
+    text-decoration: none;
+    transition: background 0.3s ease, color 0.3s ease;
+    /* Smooth transition for background color */
+    display: flex;
+    align-items: center;
+    /* Align icons and text */
+}
+
+.navbar-nav.side-nav a i {
+    margin-right: 10px;
+    /* Spacing between icon and text */
+}
+
+.navbar-nav.side-nav a:hover {
+    background: #37466d;
+    /* Changed hover background color */
+    color: #01274d;
+    border-radius: 5px;
+    /* Ensured the text color remains white */
+}
+
+/* Card Styles */
+.card {
+    margin-bottom: 20px;
+    /* Increased margin for better spacing */
+    border-radius: 10px;
+    /* Added border radius for rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .15);
+    /* Enhanced shadow for a more pronounced effect */
+    background: #ffffff;
+    /* Ensure the card has a white background */
+    border: 1px solid #ddd;
+    /* Added a subtle border */
+    padding: 20px;
+    /* Added padding inside the card */
+}
+
+/* Header Top */
+.header-top {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .1);
+    background: #ffffff;
+    /* Added background color */
+    padding: 20px;
+    /* Added padding for better spacing */
+    font-weight: bold;
+    /* Bold text for header */
+    margin-bottom: 20px;
+    /* Added margin below header */
+}
+
+/* Button Styles */
+button {
+    background: #007bff;
+    /* Primary button color */
+    border: none;
+    color: #fff;
+    /* White text color */
+    padding: 10px 20px;
+    /* Padding for better spacing */
+    border-radius: 5px;
+    /* Rounded corners */
+    cursor: pointer;
+    transition: background 0.3s ease;
+    /* Smooth transition for background color */
+    display: flex;
+    align-items: center;
+    /* Align icons and text */
+}
+
+button i {
+    margin-right: 8px;
+    /* Spacing between icon and text */
+}
+
+button:hover {
+    background: #0056b3;
+    /* Darker shade on hover */
+}
+
+/* Responsive Design for Desktops */
+@media(min-width: 992px) {
+    #wrapper {
+        margin-left: 240px;
+        /* Adjusted margin to match the navbar width */
+        padding: 70px 25px 25px;
+    }
+
+    .navbar-nav.side-nav {
+        flex-direction: column !important;
+        background: #2c3e50;
+    }
+}
+
+/* Responsive Design for Tablets and Mobiles */
+@media(max-width: 991px) {
+    .navbar-nav.side-nav {
+        background: #2c3e50;
+        box-shadow: 2px 1px 5px rgba(0, 0, 0, .1);
+        position: relative;
+        flex-direction: row !important;
+        width: 100%;
+        overflow-y: hidden;
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+
+    .navbar-nav.side-nav a {
+        color: #fff;
+        padding: 10px 10px;
+        /* Adjusted padding for mobile view */
+    }
+
+    .navbar-nav.side-nav a:hover {
+        background: #34495e;
+        color: #fff;
+    }
+}
+
+/* Further Improvements for Small Screens */
+@media(max-width: 576px) {
+    body {
+        font-size: 14px;
+        /* Smaller font size for mobile */
+    }
+
+    .card {
+        padding: 10px;
+        /* Reduced padding inside the card */
+    }
+
+    button {
+        padding: 8px 16px;
+        /* Reduced padding for buttons */
+    }
+}
